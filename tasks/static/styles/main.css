@@ -1,0 +1,85 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#fixed-height {
+    max-height: 100vh;
+}
+
+#carta-principal {
+    position: absolute;
+    z-index: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    align-self: center;
+    align-items: center;    
+}
+
+#seccion-principal {
+    position: relative;
+    min-height: 100px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 90px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#ola {
+    position: relative;
+    width: 100%;
+}
+
+#seccion-fundadores {
+    overflow: hidden;
+    color: white;
+    width: 100%;
+    height: auto;
+    background-color: rgb(39, 48, 54);
+}
+
+#ola1 {
+    position: relative;
+    width: 100%;
+}
+
+#seccion-galeria .col-lg-4 {
+    margin: 0 !important; 
+    padding: 25px;
+}
+
+#seccion-galeria img {
+    width: 100%;
+    height: 300px;
+}
+
+#seccion-galeria img:hover {
+    border: 5px solid white;
+}
+
+#seccion-menu {
+    width: 100%;
+}
+
+#seccion-menu img {
+    height: 200px;
+    width: 300px;
+}
+
+#carta-cuadrado {
+   margin: 20px;
+}
+
+#footer {
+    font-size: 130%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    opacity: 0.99999999;
+    background-color: #014382;
+    height: 100px;
+    width: 100%;
+}

@@ -1,0 +1,247 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viweport" content="with=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'media/dinner.ico' %}"/>
+    <title>Karmoncho's restorán</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/force-transition.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/wave.css' %}">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    </style>
+
+  </head>
+  <body>
+    {% block content %}
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary justify-content-end" data-bs-theme="dark" id="barra-navegacion">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'media/logo.png' %}" alt="Bootstrap" width="40" height="34">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion-principal">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ola">Nuestros fundadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion-galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Menú</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    <div id="carouselExampleIndicators" class="carousel slide" style="display: flex !important; justify-content: center; align-items: center;">
+      <div class="card text-center" id="carta-principal">
+        <div class="card-header">
+          🍔Restaurantes🥟
+        </div>
+        <div class="contenedor-carta">
+          <div class="card-body">
+            <h5 class="card-title" style="margin: 6%; font-size: 320%;">El Balcón de Karmoncho</h5>
+            <p class="card-text"></p>
+            <a href="#seccion-principal" class="btn btn-primary">¡Conocenos!</a>
+          </div>
+        </div>
+      </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+          
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'media/empanadas2.jpg' %}" class="d-block w-100" alt="..." id="fixed-height">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'media/empanadas1.jpg' %}" class="d-block w-100" alt="..." id="fixed-height">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'media/Carnival.jpg' %}" class="d-block w-100" alt="..." id="fixed-height">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'media/empanadas3.jpg' %}" class="d-block w-100" alt="..." id="fixed-height">
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> 
+    </div>
+        
+    <section id="seccion-principal">
+      <h1 style="font-size: 420%;">¿Qué es El Balcón de Karmoncho?<span class="badge bg-secondary"></span></h1>
+      <hr>
+      <section style="margin: 7%; font-size: 150%; margin-bottom: 2%;">
+        <p>Bienvenidos a "El Balcón de Karmoncho", un restaurante con una ubicación privilegiada en el corazón de la ciudad. Nuestro nombre hace referencia a la hermosa vista panorámica que se puede disfrutar desde nuestra terraza, un balcón que ofrece una vista única de la ciudad mientras disfruta de su comida.</p>
+        <p>En nuestro restaurante, ofrecemos una experiencia gastronómica única que combina los sabores tradicionales con las últimas tendencias culinarias. Utilizamos ingredientes frescos y de calidad para crear platos únicos que satisfagan todos los gustos.</p>
+        <p>Nuestra carta cuenta con una gran variedad de platos, desde las tradicionales tapas y raciones hasta los platos principales más elaborados. Además, ofrecemos una selección de vinos y bebidas que complementarán perfectamente su comida.</p>
+        <p>En "El Balcón de Karmoncho" nos esforzamos por brindar un servicio de alta calidad, desde el momento en que entra por la puerta hasta el momento en que se despide. Nuestro personal altamente capacitado y amable está aquí para asegurarse de que su experiencia sea inolvidable.</p>
+        <p>Ya sea que esté buscando un lugar para una cena íntima, una reunión con amigos o un evento especial, "El Balcón de Karmoncho" es el lugar perfecto. Nuestro ambiente acogedor y relajado hace que sea un lugar ideal para disfrutar de una buena comida y una excelente compañía.</p>
+        <p>Esperamos darle la bienvenida pronto a "El Balcón de Karmoncho" y mostrarle por qué somos uno de los mejores restaurantes de la ciudad. ¡Gracias por elegirnos!
+        </p>
+      </section>
+    </section>
+      <img src="{% static 'media/wave.png' %}" id="ola">
+
+    <section id="seccion-fundadores">
+      <div>
+        <h1 style="text-align: center; font-size: 420%;">Nuestros fundadores</h1 >
+          <div style="text-align: center;">
+            <img src="{% static 'media/carmelo-claudia.png' %}" alt="Carmelo Vargas y Claudia Morales" style="position: relative; width: 300px; height: 300px;">
+            <h4 style="font-size: 85%;">Claudia Morales y Carmelo Vargas</h4>
+          </div>
+              
+          <div id="parrafos" style="margin-top: 5% !important;margin: 10%; font-size: 150%;">
+            <p>Hace muchos años, en la ciudad de Carloz Paz, Córdoba, vivía un hombre llamado Carmelo, apodado "Karmoncho". Karmoncho era un hombre apasionado por la buena comida y la buena compañía, y siempre soñaba con abrir su propio restaurante.</p>
+            <p>Sin embargo, Karmoncho sabía que necesitaba la ayuda de alguien que supiera de negocios para hacer realidad su sueño. Fue entonces cuando conoció a Claudia, una mujer emprendedora que estaba buscando una nueva aventura empresarial.</p>
+            <p>Juntos, Karmoncho y Claudia trabajaron duro para hacer realidad el sueño de Karmoncho de abrir su propio restaurante. Buscaron un lugar con una vista única y encontraron una pequeña propiedad en la esquina de una calle, que tenía una terraza en la azotea con una vista panorámica impresionante de la ciudad.</p>
+            <p>Karmoncho y Claudia pusieron todo su esfuerzo y recursos en la construcción del restaurante, y finalmente, después de varios meses de trabajo duro, "El Balcón de Karmoncho" abrió sus puertas.</p>
+            <p>La inauguración fue un gran éxito. Los amigos y la familia de Karmoncho y Claudia se reunieron en el restaurante para celebrar su apertura, y pronto la noticia de la deliciosa comida y la vista impresionante se corrió por toda la ciudad. El restaurante se convirtió en un lugar popular para la gente que buscaba una buena comida y una vista panorámica de la ciudad.</p>
+            <p>Karmoncho y Claudia siguieron trabajando juntos para mejorar el restaurante, y pronto se convirtió en uno de los lugares más populares de la ciudad. Aunque Karmoncho ya no está con nosotros, su espíritu vive en "El Balcón de Karmoncho", un lugar donde se puede disfrutar de buena comida y buena compañía mientras se disfruta de una vista impresionante de la ciudad.</p>
+          </div>
+      </div>
+    </section>
+      <img src="{% static 'media/wave1.png' %}" id="ola1">
+
+    <section id="seccion-galeria" class="container">
+      <div class="text-center pt-5">
+        <h1 style="font-size: 420%;">Galería</h1>
+        <p>Fotos tomadas desde el balcón.</p>
+      </div>
+          
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon1.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon2.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon3.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon4.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon5.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon6.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon7.png' %}" alt="galería imagen">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'media/imagenes-balcon/balcon8.png' %}" alt="galería imagen">
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion-menu">
+      <div class="text-center pt-5">
+        <h1 style="font-size: 420%;">Menú</h1>
+      </div>
+
+      <div class="container">
+        <div class="row"">
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/asado.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Asado Argentino</h2></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/choripan.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Choripán</h2></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/empanadas.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Empanadas de pollo</h2></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/milanesa.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Milanesa de carne</h2></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/humita.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Humitas</h2></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"id="carta-cuadrado">
+            <div class="card" style="width: 20rem;">
+              <img src="{% static 'media/imagenes-menu/nioquis.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><h2>Ñoquis</h2></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      
+      <section id="footer">
+        Frontend: Iván Menseguet.
+        <br>
+        Backend: Franco Stimolo, Ángel González, Agustín Lautaro Choque.
+        <br>
+        2023 IPET 249 Nicolás Copérnico
+      </section>
+    </section>
+
+    {% endblock %}
+
+  </body>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</html>
